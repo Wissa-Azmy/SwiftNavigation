@@ -59,7 +59,7 @@ class AppCoordinator: Coordinator {
 
     @Published var isShowingSheet = false
 
-    var loadingView = AnyView(EmptyView())
+    var loadingView = AnyView(ProgressView())
 
     @Published var isLoading = false
 

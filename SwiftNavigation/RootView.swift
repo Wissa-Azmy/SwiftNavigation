@@ -31,6 +31,14 @@ struct RootView: View {
             Button("Show alert") {
                 coordinator.showAlert(title: "Alert", message: "Can you see me?")
             }
+
+            Button("Show loading") {
+                coordinator.showLoading()
+            }
+
+            Button("Stop loading") {
+                coordinator.stopLoading()
+            }
         }
     }
 }
