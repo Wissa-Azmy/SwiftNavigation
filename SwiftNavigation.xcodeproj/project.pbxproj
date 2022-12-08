@@ -45,6 +45,7 @@
 		7BFD3017292FBD85005E08C0 = {
 			isa = PBXGroup;
 			children = (
+				7B9DA3092941EC3600BBF1F4 /* preview.gif */,
 				7BFD3022292FBD85005E08C0 /* SwiftNavigation */,
 				7BFD3021292FBD85005E08C0 /* Products */,
 			);
@@ -69,7 +70,6 @@
 				7B9DA3072941E3CC00BBF1F4 /* LoadingView.swift */,
 				7BFD3027292FBD86005E08C0 /* Assets.xcassets */,
 				7BFD3029292FBD86005E08C0 /* Preview Content */,
-				7B9DA3092941EC3600BBF1F4 /* preview.gif */,
 			);
 			path = SwiftNavigation;
 			sourceTree = "<group>";
