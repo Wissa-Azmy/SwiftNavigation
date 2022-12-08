@@ -35,10 +35,6 @@ struct RootView: View {
             Button("Show loading") {
                 coordinator.showLoading()
             }
-
-            Button("Stop loading") {
-                coordinator.stopLoading()
-            }
         }
     }
 }

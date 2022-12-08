@@ -10,6 +10,7 @@
 		7B9DA3022941419400BBF1F4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9DA3012941419400BBF1F4 /* AppCoordinator.swift */; };
 		7B9DA3042941473D00BBF1F4 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9DA3032941473D00BBF1F4 /* RootView.swift */; };
 		7B9DA3062941479600BBF1F4 /* FullScreenCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9DA3052941479600BBF1F4 /* FullScreenCoverView.swift */; };
+		7B9DA3082941E3CC00BBF1F4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9DA3072941E3CC00BBF1F4 /* LoadingView.swift */; };
 		7BFD3024292FBD85005E08C0 /* SwiftNavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD3023292FBD85005E08C0 /* SwiftNavigationApp.swift */; };
 		7BFD3026292FBD85005E08C0 /* AppCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD3025292FBD85005E08C0 /* AppCoordinatorView.swift */; };
 		7BFD3028292FBD86005E08C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD3027292FBD86005E08C0 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		7B9DA3012941419400BBF1F4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7B9DA3032941473D00BBF1F4 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		7B9DA3052941479600BBF1F4 /* FullScreenCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoverView.swift; sourceTree = "<group>"; };
+		7B9DA3072941E3CC00BBF1F4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7BFD3020292FBD85005E08C0 /* SwiftNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFD3023292FBD85005E08C0 /* SwiftNavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNavigationApp.swift; sourceTree = "<group>"; };
 		7BFD3025292FBD85005E08C0 /* AppCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				7B9DA3052941479600BBF1F4 /* FullScreenCoverView.swift */,
 				7BFD3027292FBD86005E08C0 /* Assets.xcassets */,
 				7BFD3029292FBD86005E08C0 /* Preview Content */,
+				7B9DA3072941E3CC00BBF1F4 /* LoadingView.swift */,
 			);
 			path = SwiftNavigation;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				7B9DA3062941479600BBF1F4 /* FullScreenCoverView.swift in Sources */,
 				7BFD3026292FBD85005E08C0 /* AppCoordinatorView.swift in Sources */,
 				7BFD3024292FBD85005E08C0 /* SwiftNavigationApp.swift in Sources */,
+				7B9DA3082941E3CC00BBF1F4 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
