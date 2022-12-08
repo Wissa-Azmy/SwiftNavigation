@@ -13,10 +13,10 @@ struct RootView: View {
     var body: some View {
         VStack(spacing: 20) {
             NavigationLink(value: AppRoute.firstScreen) {
-                Text("go to first screen")
+                Text("go to first screen from a navigationLink")
             }
 
-            Button("go to second screen") {
+            Button("go to second screen from a button") {
                 coordinator.navigate(to: .secondScreen)
             }
 
@@ -28,12 +28,12 @@ struct RootView: View {
                 coordinator.showFullScreenCover(for: .fullScreenCover)
             }
 
-            Button("Show alert") {
-                coordinator.showAlert(title: "Alert", message: "Can you see me?")
-            }
-
             Button("Show loading") {
                 coordinator.showLoading()
+            }
+
+            Button("Show alert") {
+                coordinator.showAlert(title: "Alert", message: "Can you see me?")
             }
         }
     }
