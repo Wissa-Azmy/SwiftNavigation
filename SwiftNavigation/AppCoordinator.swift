@@ -55,15 +55,15 @@ class AppCoordinator: Coordinator {
 
     @Published var isShowingAlert = false
 
-    var sheetView = AnyView(EmptyView())
+    var sheetView = EmptyView().asAnyView
 
     @Published var isShowingSheet = false
 
-    var loadingView:AnyView { AnyView(LoadingView(coordinator: self)) }
+    var loadingView: AnyView { LoadingView(coordinator: self).asAnyView }
 
     @Published var isLoading = false
 
-    var fullScreenCoverView = AnyView(EmptyView())
+    var fullScreenCoverView: AnyView = EmptyView().asAnyView
 
     @Published var isShowingFullScreenCover = false
 
@@ -76,13 +76,13 @@ class AppCoordinator: Coordinator {
     func view(for route: AppRoute) -> AnyView {
         switch route {
         case .rootView:
-            return AnyView(RootView(coordinator: self))
+            return RootView(coordinator: self).asAnyView
         case .firstScreen:
-            return AnyView(Text("First Screen"))
+            return Text("First Screen").asAnyView
         case .secondScreen:
-            return AnyView(Text("Second Screen"))
+            return Text("Second Screen").asAnyView
         case .fullScreenCover:
-            return AnyView(FullScreenCoverView(coordinator: self))
+            return FullScreenCoverView(coordinator: self).asAnyView
         }
     }
 
@@ -94,7 +94,7 @@ class AppCoordinator: Coordinator {
     }
 
     func showSeet(for route: AppRoute) {
-        sheetView = view(for: route)
+        sheetView = view(for: route).asAnyView
         isShowingSheet = true
     }
 
@@ -103,7 +103,7 @@ class AppCoordinator: Coordinator {
     }
 
     func showFullScreenCover(for route: AppRoute) {
-        fullScreenCoverView = view(for: route)
+        fullScreenCoverView = view(for: route).asAnyView
         isShowingFullScreenCover = true
     }
 
@@ -131,5 +131,11 @@ enum AppAlertButton {
         case .destructive(let title, let action):
             return Alert.Button.destructive(Text(title), action: action)
         }
+    }
+}
+
+extension View {
+    var asAnyView: AnyView {
+        AnyView(self)
     }
 }
